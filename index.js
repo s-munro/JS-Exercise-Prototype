@@ -114,17 +114,17 @@ Baby.prototype.play = function () {
 };
 
 const babyKonoha = new Baby('Konohamaru', '6', 'Cape');
-console.log(babyKonoha);
-babyKonoha.play();
+// console.log(babyKonoha);
+// console.log(babyKonoha.play());
 
 /* 
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. 'this' will refer to the window when activated in the global scope
+  2. .this is attached to an object, and the target of .this can be found by just looking at what comes before the dot.
+  3. When .this is in a constructor function (i.e. this.name = name) and we create an instance, the this will now refer to the created object (i.e. the name of the created object)
+  4. When we .call(example) or .apply(example), the target of this is explicitly given, in this case, to 'example'.
 */
 
 
